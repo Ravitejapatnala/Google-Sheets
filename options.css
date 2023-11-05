@@ -1,0 +1,56 @@
+.options{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px 10px;
+    width: fit-content;
+    margin: auto;
+}
+
+.options input, .options select{
+    flex-grow: 1;
+}
+
+.bottom-section{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 20px;
+}
+
+.bottom-section> input{
+    flex-grow: 1;
+    padding: 10px;
+}
+
+#active-cell{
+    background-color: #e7e7e7;
+    padding: 10px;
+}
+
+.option-btn{
+    cursor: pointer;
+    padding: 5px;
+}
+
+.option-btn:hover{
+    background-color: #ededed;
+    border-radius: 4px;
+}
+
+.hidden-input{
+    height: 0;
+    width: 0;
+}
+
+.hidden-input:checked + label{
+    background-color: #e7e7e7;
+}
+
+#file{
+    border: none;
+    background-color: #e7e7e7;
+    color: black;
+    border-radius: 4px;
+    padding: 2px;
+}

@@ -1,0 +1,64 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.root{
+    overflow: scroll;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: fit-content;
+    background-color: white;
+}
+
+.header> div:nth-child(1)
+{
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    background-color: #e7e7e7;
+}
+
+.header-cell{
+    min-width: 150px;
+    text-align: center;
+    padding: 3px;
+    border: 1px solid #c4c7c5;
+    color: #444746;
+}
+
+.body{
+    display: flex;
+    width: fit-content;
+}
+
+.sno{
+    position: sticky;
+    left: 0;
+    background-color: white;
+}
+
+.serial-cell{
+    min-width: 150px;
+    border: 1px solid #c4c7c5;
+    color: #444746;
+    text-align: center;
+    padding: 3px;
+}
+
+.row{
+    display: flex;
+}
+
+.main-cell{
+    min-width: 150px;
+    border: 1px solid #c4c7c5;
+    padding: 3px;
+}
