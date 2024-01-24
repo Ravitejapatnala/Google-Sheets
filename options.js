@@ -18,6 +18,8 @@ const defaultProperties={
     isItalic: false,
     isUnderlined: false,
     value: '',
+    add: 16,
+    minus: 2,
 }
 
 
@@ -44,6 +46,8 @@ function resetOptions(optionsState){
     form.bold.checked= optionsState.isBold;
     form.italic.value= optionsState.isItalic;
     form.underline.value= optionsState.isUnderlined;
+    form.add.value= optionsState.add;
+    form.minus.value= optionsState.minus;
 }
 
 function onFormChange(){
@@ -63,6 +67,8 @@ function onFormChange(){
         isBold: form.bold.checked,
         isItalic: form.italic.checked,
         isUnderlined: form.underline.checked,
+        add: form.add.value,
+        minus: form.minus.value,
     }
     applyStylesToCell(currentState);
 
@@ -77,6 +83,8 @@ function applyStylesToCell(styleObject){
     activeElement.style.color= styleObject.color;
     activeElement.style.backgroundColor= styleObject.backgroundColor;
     activeElement.style.textAlign= styleObject.textAlign;
+    activeElement.style.add= styleObject.add;
+    activeElement.style.minus= styleObject.minus;
     if(styleObject.isBold)
     {
         activeElement.style.fontWeight = "bold";
